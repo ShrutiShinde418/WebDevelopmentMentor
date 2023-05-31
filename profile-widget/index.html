@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Component</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/db07eb4fcc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="font-custom min-h-screen flex justify-center items-center bg-neon-blue"
+  >
+    <main class="card">
+      <div class="flex flex-col justify-center">
+        <div class="flex justify-end mb-7 gap-x-3">
+          <a href="#">
+            <img src="./assets/search.svg" alt="search" class="w-9" />
+          </a>
+          <a href="#">
+            <img src="./assets/bell.svg" alt="notifications" class="w-9" />
+          </a>
+        </div>
+        <div class="relative mb-16">
+          <img
+            src="./assets/background.png"
+            alt="background"
+            class="rounded-2xl"
+          />
+          <img
+            src="./assets/avatar.png"
+            alt="John Westfield"
+            class="img-responsive absolute w-28 top-12 left-1/3"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-black font-semibold text-2xl text-center mb-3">
+            John Westfield
+            <span
+              ><i
+                class="fa-sharp fa-solid fa-circle-check fa-xs text-neon-blue"
+              ></i
+            ></span>
+          </h1>
+          <h2 class="text-center text-base text-armadillo mb-8">
+            I'm interested in building projects, traveling and biking
+          </h2>
+          <div class="flex justify-evenly mb-5 w-full">
+            <ul>
+              <li class="stat_heading">150</li>
+              <li class="text-center">Following</li>
+            </ul>
+            <ul>
+              <li class="stat_heading text-neon-blue">43,150</li>
+              <li class="text-center">Followers</li>
+            </ul>
+            <ul>
+              <li class="stat_heading">163</li>
+              <li class="text-center">Posts</li>
+            </ul>
+          </div>
+          <button type="button" class="btn">Follow Me</button>
+          <div class="flex flex-col info gap-4 pb-5">
+            <ul>
+              <li class="flex items-center">
+                Lives in
+                <span class="font-semibold opacity-70">&nbsp;Budapest</span>
+              </li>
+            </ul>
+            <ul>
+              <li class="flex items-center">
+                Works as Full-Stack developer at Google
+              </li>
+            </ul>
+            <ul>
+              <li class="flex items-center">
+                ReactJs, NodeJs, MongoDB, Devops
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

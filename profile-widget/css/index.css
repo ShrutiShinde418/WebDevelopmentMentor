@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  max-width: 25rem;
+  height: auto;
+  @apply bg-white p-6 rounded-3xl;
+}
+
+/* .img-responsive {
+  @apply max-w-full h-auto;
+} */
+
+.stat_heading {
+  @apply font-semibold text-2xl text-center;
+}
+
+.btn {
+  @apply bg-neon-blue px-9 py-4 rounded-2xl text-white font-semibold self-stretch mb-6 hover:bg-opacity-30 hover:text-neon-blue;
+}
+
+.info ul:first-of-type li::before {
+  background-image: url("../assets/mark.svg");
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 0.25rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.info ul:nth-of-type(2) li::before {
+  background-image: url("../assets/case.svg");
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 0.25rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.info ul:last-of-type li::before {
+  background-image: url("../assets/fire.svg");
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 0.25rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media (max-width: 410px) {
+  .card {
+    max-width: 20rem;
+    margin: 1.5rem 0;
+  }
+
+  img[alt="John Westfield"] {
+    left: 30%;
+    top: 2rem;
+  }
+
+  h1 {
+    margin-top: 0.5rem;
+  }
+}
